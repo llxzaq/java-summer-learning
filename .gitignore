@@ -1,0 +1,11 @@
+# Java compiled files
+*.class
+bin/
+out/
+
+# VS Code Java workspace cache
+.vscode/
+.redhat/
+
+# macOS
+.DS_Store
