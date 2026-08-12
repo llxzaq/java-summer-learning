@@ -1,7 +1,7 @@
 public class Monster extends Character{
-    protected int level;
-    public Monster(String name,int hp,int attack,int level){
-        super(name, hp, attack);
+    private int level;
+    public Monster(String name,int hp,int level){
+        super(name, hp);
         this.level=level;
     
 
