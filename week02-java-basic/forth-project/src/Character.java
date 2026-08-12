@@ -9,7 +9,7 @@ public class Character {
         
     }
     public void showInfo(){
-        System.out.println(this.name+" hp"+this.hp+" attack"+this.attack);
+        System.out.println(this.name+" hp"+this.hp);
     }
     protected void takeDamage(int  damage){
         this.hp-=damage;

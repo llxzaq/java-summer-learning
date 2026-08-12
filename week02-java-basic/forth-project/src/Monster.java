@@ -7,11 +7,11 @@ public class Monster extends Character{
 
     }
     public void roar(){
-        System.out.println(this.name+"发出怒吼");
+        System.out.println(this.name+" 发出怒吼！");
     }
 
     public void showInfo(){
-         System.out.println(this.name+" hp"+this.hp+" attack"+this.attack+" level"+this.level);
+         System.out.println(this.name+" hp"+this.hp+" level"+this.level);
     }
 
 
