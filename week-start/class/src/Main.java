@@ -1,14 +1,12 @@
 public class Main {
     public static void main(String[] args) {
         Score<String> levelScore = new Score<>("高等数学", "MATH-001", "优秀");
-        Score<Double> numericScore = new Score<>("大学英语", "ENG-001", 92.5);
+        Score<Integer> numericScore = new Score<>("大学英语", "ENG-001", 92);
+        String[] texts = {"优秀", "良好"};
+        Integer[] numbers = {90, 85};
 
-        String level = levelScore.getValue();
-        Double numericValue = numericScore.getValue();
+        Score.printArray(texts);
+        Score.printArray(numbers);
 
-        System.out.printf("%s（%s）：%s%n",
-                levelScore.getCourseName(), levelScore.getCourseNumber(), level);
-        System.out.printf("%s（%s）：%.1f%n",
-                numericScore.getCourseName(), numericScore.getCourseNumber(), numericValue);
     }
 }

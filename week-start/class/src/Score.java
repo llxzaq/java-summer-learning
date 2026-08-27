@@ -20,4 +20,13 @@ public class Score<T> {
     public T getValue() {
         return value;
     }
+    public static <T> void printArray(T[] values){
+        for(int i=0;i<values.length;i+=1){
+            T a=values[i];
+
+            System.out.println(a);
+
+        }
+
+    }
 }
