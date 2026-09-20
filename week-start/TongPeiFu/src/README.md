@@ -1,2 +1,7 @@
 因为list可能是double或者int而Number中可能是int 或者double 防止int放到double这类错误,实际列表可能是 List<Double>因此禁止
 因为说明这个list可能是object或者number或者integer而object是最顶端的父类，即使是integer的类型也能放到object中 Object a=list.get(0)因为实际列表可能是 List<Object>，其中可能有并非 Integer 的元素
+输出[1, 2, 3]
+6.0
+[1, 2, 3]
+6.0
+6.0
