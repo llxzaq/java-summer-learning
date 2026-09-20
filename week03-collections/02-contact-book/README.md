@@ -1,0 +1,1 @@
+增强 for 底层使用 Iterator 遍历集合。如果在遍历过程中直接调用 contacts.remove(contact) 修改集合结构，Iterator 的内部状态可能与集合不一致，从而触发 ConcurrentModificationException。因此遍历删除元素时应显式使用 Iterator，并调用 iterator.remove()

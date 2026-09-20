@@ -6,11 +6,8 @@ public class Main {
         int n=scanner.nextInt();
         scanner.close();
         int a=1;
-        
         for(int i=1;i<n;i++){
             a=2*a+1;
-
-
         }
         System.out.println("最少次数为："+a);
         System.out.println("具体步骤为：");
@@ -44,14 +41,10 @@ public class Main {
         }
         if(n==1){
             System.out.println("B->C");
-        }
-
-        
-            
+        }      
     }
     public static void theWayCA(int n){
         if(n>=2){
-
             theWayCB(n-1);
             System.out.println("C->A");
             theWayBA(n-1);
@@ -59,11 +52,9 @@ public class Main {
         if(n==1){
             System.out.println("C->A");
         }
-
     }
     public static void theWayBA(int n){
         if(n>=2){
-
             theWayBC(n-1);
             System.out.println("B->A");
             theWayCA(n-1);
@@ -71,11 +62,9 @@ public class Main {
         if(n==1){
             System.out.println("B->A");
         }
-
     }
     public static void theWayCB(int n){
         if(n>=2){
-
             theWayCA(n-1);
             System.out.println("C->B");
             theWayAB(n-1);
@@ -83,7 +72,5 @@ public class Main {
         if(n==1){
             System.out.println("C->B");
         }
-
-    
     }
 }
